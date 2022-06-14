@@ -76,30 +76,28 @@ for(let index = 0; index < historicoDeResultado.length; index++) {
 
 // Requisito 6
 function conditionCase() {
-  //Seu código aqui, descomente para usar a estrutura declarada.
-/if () {
-    let index => 20; index => historicoDeResultado.length; index++}
-    requisito6 = 'maior ou igual a 20';//NÃO ALTERAR!
-    req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!  
-  } else {
-    //Seu código aqui
-
-    requisito6 = 'menor que 20';//NÃO ALTERAR!
-    req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!
-  } */
+let maior20 = historicoDeResultado[(historicoDeResultado.length)-1]//Seu código aqui, descomente para usar a estrutura declarada.
+if ( maior20 >= 20) {
+  //Seu código aqui
+  requisito6 = 'maior ou igual a 20';//NÃO ALTERAR!
+  req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!  
+} else {
+  //Seu código aqui
+  requisito6 = 'menor que 20';//NÃO ALTERAR!
+  req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!
+  }
 }
 
 
 // Requisito 7
 function intermediateNumbers() {
   let numeros = [];//NÃO ALTERAR!
-
-  //Seu código aquidescomente para usar a estrutura declarada.
-/*   for () { //Seu código aqui
-    if () {//Seu código aqui
-      numeros //Seu código aqui, manipule a variável sem alterar o nome dela.
-    }
-  } */
+  //Seu código aqui descomente para usar a estrutura declarada.
+for (let i = 0 ; i < historicoDeResultado.length ; i++) { //Seu código aqui
+  if ( historicoDeResultado[i] >= 10 && historicoDeResultado[i] <= 20) {//Seu código aqui
+    numeros.push(historicoDeResultado[i]) //Seu código aqui, manipule a variável sem alterar o nome dela.
+  }
+}
   return req7.innerHTML = `Numeros entre 10 e 20: ${numeros}`;//NÃO ALTERAR!
 };
 
